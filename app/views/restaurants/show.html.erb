@@ -10,3 +10,4 @@ Restaurant details
 <%= link_to 'edit', edit_restaurant_path %>
 <%= link_to 'delete', restaurant_path(@restaurant), method: :delete, data: { confirm: "Are you sure?" } %>
 <%= link_to 'back to the list', restaurants_path %>
+<p><%= link_to 'add your own review', new_restaurant_review_path(@restaurant) %></p>
