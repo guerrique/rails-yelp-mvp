@@ -1,11 +1,9 @@
-<h1>Yelp</h1>
-<%= link_to 'Add a new restaurant', new_restaurant_path %>
+<%= link_to 'Yelp', restaurants_path, class: "yelp" %>
+<div><%= link_to 'Add a new restaurant', new_restaurant_path %></div>
 <ul>
   <% @restaurants.each do |restaurant| %>
   <li>
     <%= link_to restaurant.name, restaurant_path(restaurant) %>
-    <%= link_to 'edit', edit_restaurant_path(restaurant) %>
-    <%= link_to 'delete', restaurant_path(restaurant), method: :delete, data: { confirm: "Are you sure? Really?"} %>
   </li>
   <% end %>
 </ul>

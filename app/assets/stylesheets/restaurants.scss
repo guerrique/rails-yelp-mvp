@@ -1,3 +1,21 @@
 // Place all the styles related to the Restaurants controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+  background-color: #F4F4F4;
+  margin: 0 auto;
+}
+
+.content {
+  margin: 30px;
+}
+
+.yelp {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 50px;
+  a:hover {
+    text-decoration: none;
+    color: black;
+  }
+}

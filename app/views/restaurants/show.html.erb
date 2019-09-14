@@ -1,11 +1,18 @@
-<h1>Yelp</h1>
-Restaurant details
+<%= link_to 'Yelp', restaurants_path, class: "yelp" %>
+<div>Restaurant details
+</div>
 
 <ul>
   <li><%= @restaurant.name %></li>
   <li><%= @restaurant.address %></li>
   <li><%= @restaurant.phone_number %></li>
   <li><%= @restaurant.category %></li>
+</ul>
+Reviews
+<ul>
+  <% @restaurant.reviews.each do |review| %>
+  <li><%= review.content %></li>
+  <% end %>
 </ul>
 <%= link_to 'edit', edit_restaurant_path %>
 <%= link_to 'delete', restaurant_path(@restaurant), method: :delete, data: { confirm: "Are you sure?" } %>

@@ -1,2 +1,19 @@
 // Import page-specific CSS files here.
 @import "home";
+.container {
+  margin: 0 auto;
+}
+
+.content {
+  margin: 30px 30px;
+}
+
+.yelp {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 50px;
+  a:hover {
+    text-decoration: none;
+    color: black;
+  }
+}
